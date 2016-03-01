@@ -1,0 +1,77 @@
+html, body
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0px;
+    padding: 0px;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+*
+{
+    -webkit-user-select: none;
+}
+
+body.sparky div
+{
+    background-image: url('flashes.png');
+    background-repeat: repeat-x;
+    transform-origin: 0% 50%;
+}
+
+body.pixels div, body.centimeters div, body.inches div
+{
+    text-align: center;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    overflow: visible;
+    transform-origin: 0% 50%;
+}
+
+p
+{
+    margin: 0px;
+    padding: 0px 8px;
+    font-size: 20px;
+    line-height: 24px;
+    height: 24px;
+    overflow: hidden;
+    background: #600;
+    -webkit-text-size-adjust: none;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+a
+{
+    color: #fff;
+    text-decoration: underline;
+}
+
+p#preload
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 1px;
+    opacity: 0.01;
+    background-image: url('flashes.png');
+}
+
+p#linkHolder
+{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    text-align: right;
+}
+
