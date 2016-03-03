@@ -20,6 +20,9 @@ html, body
 
 body.sparky div
 {
+    position: absolute;
+    display: block;
+    height: 16px;
     background-image: url('flashes.png');
     background-repeat: repeat-x;
     transform-origin: 0% 50%;

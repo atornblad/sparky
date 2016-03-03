@@ -25,7 +25,7 @@
             currentMode = "sparky";
         }
         
-        document.getElementById("changeMode").innerHTML = currentMode;
+        document.getElementById("changeMode").textContent = currentMode;
         document.body.className = currentMode;
     };
     
@@ -53,11 +53,8 @@
         }
         
         // Assign values to some style properties
-        div.style['position'] = 'absolute';
-        div.style['display'] = 'block';
         div.style['left'] = (oneTouch.x - 8) + 'px';
         div.style['top'] = (oneTouch.y) + "px";
-        div.style['height'] = '16px';
         div.style['width'] = distFixed + 'px';
         div.style['backgroundPosition'] = '' + (Math.random() * 100.0).toFixed(0) + '% 0%';
         div.style['transform'] = 'rotate(' + angle.toFixed(1) + 'deg)';
