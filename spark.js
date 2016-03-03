@@ -170,6 +170,12 @@
             var touch = e.changedTouches[i];
             removeTouch('t'+touch.identifier);
         }
+        if (e.touches.length == 0) {
+            var keys = Object.getOwnPropertyNames(touches);
+            keys.forEach(function(key) {
+                removeTouch(key);
+            });
+        }
     };
     
     // Helper event handler for hiding events that we don't want the browser to get
