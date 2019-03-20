@@ -16,16 +16,20 @@ html, body
 *
 {
     -webkit-user-select: none;
+    touch-action: none;
+}
+
+div {
+    position: absolute;
+    display: block;
+    height: 16px;
+    transform-origin: 0% 50%;
 }
 
 body.sparky div
 {
-    position: absolute;
-    display: block;
-    height: 16px;
     background-image: url('flashes.png');
     background-repeat: repeat-x;
-    transform-origin: 0% 50%;
 }
 
 body.pixels div, body.centimeters div, body.inches div
@@ -35,7 +39,6 @@ body.pixels div, body.centimeters div, body.inches div
     border-right: solid 1px #fff;
     border-bottom: solid 1px #fff;
     overflow: visible;
-    transform-origin: 0% 50%;
 }
 
 p
@@ -77,4 +80,3 @@ p#linkHolder
     bottom: 0px;
     text-align: right;
 }
-
